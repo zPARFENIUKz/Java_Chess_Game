@@ -14,4 +14,12 @@ public abstract class ChessBoard {
     public Cell getCell(final int xIndex, final int yIndex) {
         return cells[xIndex][yIndex];
     }
+
+    public int getMaxHorizontalSize() {
+        return cells[0].length - 1;
+    }
+
+    public int getMaxVerticalSize() {
+        return cells.length;
+    }
 }

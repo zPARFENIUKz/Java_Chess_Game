@@ -4,13 +4,26 @@ import chesses.ChessItem;
 
 public class Cell {
     private ChessItem chessItem = null;
+    private final int xPos;
+    private final int yPos;
 
-    public Cell() {
-
+    public Cell(final int xPos, final int yPos) {
+        this.xPos = xPos;
+        this.yPos = yPos;
     }
 
-    public Cell(ChessItem chessItem) {
+    public Cell(final int xPos, final int yPos, ChessItem chessItem) {
+        this.xPos = xPos;
+        this.yPos = yPos;
         this.chessItem = chessItem;
+    }
+
+    public int getXPos() {
+        return xPos;
+    }
+
+    public int getYPos() {
+        return yPos;
     }
 
     public ChessItem getChessItem() {
