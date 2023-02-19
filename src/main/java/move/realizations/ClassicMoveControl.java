@@ -128,6 +128,7 @@ public class ClassicMoveControl implements MoveControl {
                 }
             }
         }
+        return false;
     }
 
 
